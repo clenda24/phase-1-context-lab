@@ -8,6 +8,11 @@
  As a result, the lessons for this function will pass *and* it will be available
  for you to use if you need it!
  */
+ const wagesEarnedOnDate = function(dateSought){
+    const rawWage = hoursWorkedOnDate.call(this, dateSought)
+        * this.payPerHour
+    return parseFloat(rawWage.toString())
+}
 
 const allWagesFor = function () {
     const eligibleDates = this.timeInEvents.map(function (e) {
